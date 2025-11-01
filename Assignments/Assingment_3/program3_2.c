@@ -1,24 +1,29 @@
 #include<stdio.h>
 
-void Display(int iNo)
+void DisplayFactor(int iNo)
 {
-    if (iNo < 0)
+    int i = 0;
+
+    if(iNo <= 0)
     {
         iNo = -iNo;
     }
-    
-    while(iNo > 0)
+
+    for (int i = 0; i < ino; i++)
     {
-        printf("* ");
-        iNo--;
+        printf("%d",i);
     }
+    
 }
 
 int main()
 {
     int iValue = 0;
+
     printf("Enter number: ");
     scanf("%d", &iValue);
-    Display(iValue);
+
+    DisplayFactor(iValue);
+    
     return 0;
 }

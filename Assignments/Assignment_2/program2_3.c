@@ -2,23 +2,24 @@
 
 void Display(int iNo)
 {
-    if (iNo < 0)
+    if(iNo < 10)
     {
-        iNo = -iNo;
+        printf("Hello");
     }
-    
-    while(iNo > 0)
+    else
     {
-        printf("* ");
-        iNo--;
+        printf("Demo");
     }
 }
 
 int main()
 {
     int iValue = 0;
+
     printf("Enter number: ");
     scanf("%d", &iValue);
+
     Display(iValue);
+    
     return 0;
 }
