@@ -1,40 +1,27 @@
 #include<stdio.h>
-#include<stdbool.h>
-
 void PrintEven(int iNo)
 {
-    int i = 0;
-    int count = 0;
-    int iCnt = 0;
-
-    if(iNo <= 0)
+    if (iNo<0)
     {
-        iNo
+        iNo=-iNo;
     }
-
-    for (i = 0; i < count; i++)
+    int iCnt=0;
+    for ( iCnt = 1; iCnt <=iNo*2 ; iCnt++)
     {
-        if (i % 2==0)
+        if (iCnt%2==0)
         {
-           printf("%d"); 
-           iCnt++;
-           
+             printf("%d\t",iCnt);
         }
         
-        
     }
     
-
-}
-
-int main()
-{
-    int iValue = 0;
     
-    printf("Enter number: ");
-    scanf("%d", &iValue);
-
+}
+int main()
+{int iValue=0;
+    printf("enter number\n");
+    scanf("%d",&iValue);
     PrintEven(iValue);
+
     return 0;
 }
-
