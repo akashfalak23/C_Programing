@@ -16,7 +16,7 @@ void PrintEven(int iNo)
     {
         if (i % 2==0)
         {
-           printf("%d",); 
+           printf("%d"); 
            iCnt++;
            
         }
@@ -37,3 +37,4 @@ int main()
     PrintEven(iValue);
     return 0;
 }
+
