@@ -9,7 +9,7 @@ void DisplayFactor(int iNo)
         iNo = -iNo;
     }
 
-    for (int i = 0; i < ino; i++)
+    for (int i = 0; i < iNo; i++)
     {
         printf("%d",i);
     }
@@ -27,3 +27,4 @@ int main()
     
     return 0;
 }
+
